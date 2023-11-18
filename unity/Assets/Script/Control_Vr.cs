@@ -11,17 +11,17 @@ public class Control_Vr : MonoBehaviour
     void Start()
     {
         var xrParametres = XRGeneralSettings.Instance;
-        if (xrParametres != null)
+        if (xrParametres == null)
         {
             return;
         }
         var xrManager = xrParametres.Manager;
-        if (xrManager != null)
+        if (xrManager == null)
         {
             return;
         }
         var xrLoader = xrManager.activeLoader;
-        if (xrLoader != null)
+        if (xrLoader == null)
         {
             sourisClavier.SetActive(true);
             return;
