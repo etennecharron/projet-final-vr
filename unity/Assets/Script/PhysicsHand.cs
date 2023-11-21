@@ -10,14 +10,18 @@ public class PhysicsHand : MonoBehaviour
     [SerializeField] float rotDamping = 0.9f;
     [SerializeField] Rigidbody playerRigidBody;
     [SerializeField] Transform target;
+
     [Space]
     [Header("Springs")]
     [SerializeField] float climbForce = 1000f;
     [SerializeField] float climb = 1000f;
     [SerializeField] float climbDrag = 500f;
+    
     Vector3 _previousPosition;
     Rigidbody _rigidbody;
     bool _isColliding;
+
+
     void Start()
     {
         transform.position = target.position;
