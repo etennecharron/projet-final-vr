@@ -14,7 +14,6 @@ public class PhysicsHand : MonoBehaviour
     [Space]
     [Header("Springs")]
     [SerializeField] float climbForce = 1000f;
-    [SerializeField] float climb = 1000f;
     [SerializeField] float climbDrag = 500f;
     
     Vector3 _previousPosition;
