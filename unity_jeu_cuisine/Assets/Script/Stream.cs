@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-/**
+
 public class Stream : MonoBehaviour
 {
    private LineRenderer lineRenderer = null;
@@ -78,8 +78,9 @@ public class Stream : MonoBehaviour
     }
 
     private void AnimateToPosition(int index, Vector3 targetPosition){
+
         Vector3 currentPoint = lineRenderer.GetPosition(index);
-        Vector3 newPostion = Vector3.MoveTowards(currentPoint, targetPosition, Time.deltaTime * 1,75f);
+        Vector3 newPostion = Vector3.MoveTowards(currentPoint, targetPosition, Time.deltaTime * 1.75f);
         lineRenderer.SetPosition(index, newPostion);
     }
 
@@ -103,4 +104,3 @@ public class Stream : MonoBehaviour
     
     }
 }
-**/

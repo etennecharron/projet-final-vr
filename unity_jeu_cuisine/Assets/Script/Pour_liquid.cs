@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/**
+
 public class Pour_liquid : MonoBehaviour
 {
     public int pourTreshold = 45;
@@ -56,4 +56,3 @@ public class Pour_liquid : MonoBehaviour
     }
 
 }
-**/
