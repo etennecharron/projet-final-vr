@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class legume_spawn : MonoBehaviour
 {
-
-
-    public GameObject zoneAvocats;
+    
+[Header("Objet à téléporter")]    
     public GameObject avocat;
+
+[Header("Endroit où téléporter")]
+    public GameObject zoneAvocats;
 
     private void OnTriggerEnter(Collider other)
     {
