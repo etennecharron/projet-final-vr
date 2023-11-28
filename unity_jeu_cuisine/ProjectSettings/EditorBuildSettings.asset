@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Slicing_mechanic.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f051c4b301078854dbbd3e2a2db90a75,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: edf85ab2dfbef9147a62782e0312f282,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 74c726988dbc5564c933316271f33aba,
+      type: 2}
