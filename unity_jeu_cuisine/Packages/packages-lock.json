@@ -71,7 +71,11 @@
     },
     "com.unity.inputsystem": {
       "version": "1.6.3",
+<<<<<<< HEAD
       "depth": 1,
+=======
+      "depth": 0,
+>>>>>>> 0fc55a1129466219fd7d7aa2cdd2ecbe4167598b
       "source": "registry",
       "dependencies": {
         "com.unity.modules.uielements": "1.0.0"
