@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class legume_spawn : MonoBehaviour
 {
-    
+public int nbtest = 100;
 [Header("Objet à téléporter")]    
     public GameObject avocat;
 
