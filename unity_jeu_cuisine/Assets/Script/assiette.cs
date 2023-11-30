@@ -5,7 +5,6 @@ using UnityEngine;
 public class assiette : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject[] contenantArr = new GameObject[6];
     public int contenantIndex = 0;
     public List<GameObject> ingredientsArrNouveau = new List<GameObject>();
    
@@ -17,10 +16,6 @@ public class assiette : MonoBehaviour
             if (contenantIndex <= 5)
             {
                 ingredientsArrNouveau.Add(other.gameObject);
-               // Debug.Log("woohoo objet détecter");
-                contenantArr[contenantIndex] = other.gameObject;
-               // Debug.Log(contenantArr[contenantIndex].name);
-                contenantIndex++;
             }
             
         }

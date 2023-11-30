@@ -8,12 +8,8 @@ public class recette : MonoBehaviour
     public string[] recette01 = new string[1];
 
     private int bonIngredient = 0;
+    public GameObject objetRecette;
 
-    private void Start()
-    {
-        recette01[0] = "avocat";
-    }
-    // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "assiette")
