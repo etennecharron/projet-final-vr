@@ -16,7 +16,7 @@ public class ingredients : MonoBehaviour
     {
         if (other.tag == "ground")
         {
-            ingredient.SetActive(false);
+            ingredient.transform.position = new Vector3(zoneIngredient.transform.position.x, zoneIngredient.transform.position.y, zoneIngredient.transform.position.z);
         }
 
         if(other.tag == "assiette")
