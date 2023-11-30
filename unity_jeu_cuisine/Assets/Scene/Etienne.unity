@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2160.0432, g: 2263.8167, b: 3286.5356, a: 1}
+  m_IndirectSpecularColor: {r: 2160.0432, g: 2263.8167, b: 3286.5278, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6766,6 +6766,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   contenantIndex: 0
+  ingredientsArrNouveau: []
 --- !u!65 &1566509323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6971,7 +6972,7 @@ Transform:
   m_GameObject: {fileID: 1601828804}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02713, y: 0.01572, z: 0.05425}
+  m_LocalPosition: {x: -0.0439, y: 0.01695, z: 0.05425}
   m_LocalScale: {x: 0.15019386, y: 0.007866436, z: 0.15019386}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8245,7 +8246,7 @@ Transform:
   m_GameObject: {fileID: 1859155267}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.011850079, y: 0.016738629, z: 0.054189924}
+  m_LocalPosition: {x: -0.03642, y: 0.01747, z: 0.054189924}
   m_LocalScale: {x: 0.0016379373, y: 0.0015295777, z: 0.0016379373}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8509,9 +8510,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 739af9d6d23e6ad489880747caf97850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbtest: 100
-  avocat: {fileID: 1859155267}
-  zoneAvocats: {fileID: 11760139}
+  ingredient: {fileID: 0}
+  zoneIngredient: {fileID: 0}
+  ingredientPosition: 0
 --- !u!65 &1887700399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9274,9 +9275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 739af9d6d23e6ad489880747caf97850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbtest: 100
-  avocat: {fileID: 1859155267}
-  zoneAvocats: {fileID: 11760139}
+  ingredient: {fileID: 0}
+  zoneIngredient: {fileID: 0}
+  ingredientPosition: 0
 --- !u!1 &2087394780
 GameObject:
   m_ObjectHideFlags: 0
@@ -15471,6 +15472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d8b941be09cf46a653a29b7b41a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  recette01:
+  - 
 --- !u!4 &8732915871359369186
 Transform:
   m_ObjectHideFlags: 0
