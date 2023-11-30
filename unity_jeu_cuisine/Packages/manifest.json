@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "com.sparkgames.multiplay": "1.6.0",
     "com.unity.collab-proxy": "2.2.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.inputsystem": "1.6.3",
+    "com.unity.netcode.gameobjects": "1.5.2",
     "com.unity.render-pipelines.high-definition": "14.0.8",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.5",
@@ -43,5 +45,14 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "OpenUPM",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.sparkgames.multiplay"
+      ]
+    }
+  ]
 }
