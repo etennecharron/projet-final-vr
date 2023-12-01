@@ -134,9 +134,7 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1.0
-  preloadedAssets:
-  - {fileID: -8868481214536486159, guid: edf85ab2dfbef9147a62782e0312f282, type: 2}
-  - {fileID: 1549576318208209488, guid: 74c726988dbc5564c933316271f33aba, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -916,11 +914,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: d84eec01-3db1-4c6f-8dc9-b562290197cf
+  cloudProjectId: f69ae14a-8ca8-4c73-b50b-d1f2f0091046
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: unity_jeu_cuisine 2023-11-27_21-00-36
-  organizationId: yeticharron
+  projectName: unity_jeu_cuisine
+  organizationId: twinkie26
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

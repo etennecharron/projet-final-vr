@@ -15,6 +15,8 @@ public class SliceObject : MonoBehaviour
 
     public Material crossSectionMaterial;
     public float cutForce = 2000;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,10 +42,13 @@ public class SliceObject : MonoBehaviour
 
         if(hull != null)
         {
+
             GameObject upperHull = hull.CreateUpperHull(target, crossSectionMaterial);
             SetupSlicedComponent(upperHull);
+            upperHull.layer = target.layer;
             GameObject lowerhull = hull.CreateLowerHull(target, crossSectionMaterial);
             SetupSlicedComponent(lowerhull);
+            lowerhull.layer = target.layer;
             Destroy(target);
         }
     }
