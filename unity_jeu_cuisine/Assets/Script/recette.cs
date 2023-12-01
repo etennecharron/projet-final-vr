@@ -7,8 +7,19 @@ public class recette : MonoBehaviour
 
     public string[] recette01 = new string[1];
 
+    public bool demandeNourriture = false;
     private int bonIngredient = 0;
     public GameObject objetRecette;
+    public int numeroRecette;
+
+    /**
+    private GameObject[] recetteChoisis; 
+
+    private void selectionRecette()
+    {
+        recetteChoisis = objetRecette.GetComponent<receuil_recettes>().recette01;
+    }
+    **/
 
     private void OnTriggerEnter(Collider other)
     {
