@@ -12,6 +12,8 @@ public class recette : MonoBehaviour
     public GameObject objetRecette;
     public int numeroRecette;
 
+    public List<string> ListeIngredients;
+
     /**
     private GameObject[] recetteChoisis; 
 

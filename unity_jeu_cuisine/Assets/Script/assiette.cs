@@ -7,6 +7,8 @@ public class assiette : MonoBehaviour
     // Start is called before the first frame update
     public int contenantIndex = 0;
     public List<GameObject> ingredientsArrNouveau = new List<GameObject>();
+
+    public List<string> listIngredients;
    
     private void OnTriggerEnter(Collider other)
     {

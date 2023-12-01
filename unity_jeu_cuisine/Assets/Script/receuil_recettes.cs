@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class receuil_recettes : MonoBehaviour
 {
-    public GameObject[] recette01;
- 
+    public string[][] recettes = new string[][] { new string[] { "salade", "avocat"}, new string[] { "avocat"}};
 
 }
