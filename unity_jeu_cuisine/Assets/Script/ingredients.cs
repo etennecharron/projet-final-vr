@@ -47,6 +47,8 @@ public class ingredients : MonoBehaviour
         }
     }
 
+private void update(){
 
+}
 
 }

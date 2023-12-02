@@ -13,33 +13,35 @@ public class jeu : MonoBehaviour
     float startChrono;
     private void Update()
 
-
+       
     {
-        // À chaque 10 seconde, la function se répète
+        // a chaque 10 seconde, la function se repete
         if (Time.realtimeSinceStartup - startChrono > 10f /* <--- A modifier pour changer l'attente entre chaque commande*/)
         {
             startChrono = Mathf.Floor(Time.realtimeSinceStartup);
 
-            //donne un nombre (int) aléatoire entre 0 et le nombre de clients qui peut avoir un repas
+            //donne un nombre (int) aleatoire entre 0 et le nombre de clients qui peut avoir un repas
             int tableRandom = Mathf.CeilToInt(Mathf.Round(Random.Range(0f, Mathf.Round(zonesRepas.Length - 1))));
 
-            //variable plus rapide pour la table random séléctionner B)
+            //variable plus rapide pour la table random selectionner B)
             GameObject table = zonesRepas[tableRandom];
 
-            //Vérifie que le client n'a pas déja commander
-            if(table.GetComponent<recette>().demandeNourriture == false)
+            //Verifie que le client n'a pas deja commander
+            if(table.GetComponent<client>().demandeNourriture == false && table.GetComponent<client>().cooldownOnOff == false)
             {
-                // Annonce que le client à commander
-                table.GetComponent<recette>().demandeNourriture = true;
+                // Annonce que le client a commander
+                table.GetComponent<client>().demandeNourriture = true;
+
+                table.GetComponent<client>().tempsPourRecette = Mathf.Floor(Time.realtimeSinceStartup);
 
                 // Permet d'aller chercher un nombre parmis 0 et le nombres de recettes pour donner annoncer une commande
                 int recetteRandom = Mathf.CeilToInt(Mathf.Round(Random.Range(0f, Mathf.Round(recueilRecette.GetComponent<receuil_recettes>().recettes.Length - 1))));
 
-                // loop les ingrédients de la recette séléctionner
+                // loop les ingredients de la recette selectionner
                 for (int i = 0; i < recueilRecette.GetComponent<receuil_recettes>().recettes[recetteRandom].Length; i++)
                 {
-                    // rajoute a la liste d'ingrédient les ingrédients pour réaliser sa recette
-                    table.GetComponent<recette>().ListeIngredients.Add(recueilRecette.GetComponent<receuil_recettes>().recettes[recetteRandom][i]);
+                    // rajoute a la liste d'ingredient les ingredients pour realiser sa recette
+                    table.GetComponent<client>().ListeIngredients.Add(recueilRecette.GetComponent<receuil_recettes>().recettes[recetteRandom][i]);
                 }
 
                 Debug.Log("la table " + table.name + "a commander un pokebowl");
