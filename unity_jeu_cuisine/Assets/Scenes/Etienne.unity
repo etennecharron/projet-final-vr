@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2161.8762, g: 2265.7854, b: 3288.9458, a: 1}
+  m_IndirectSpecularColor: {r: 2159.7473, g: 2263.6213, b: 3286.6177, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3766,11 +3766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d8b941be09cf46a653a29b7b41a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recette01:
-  - 
   demandeNourriture: 0
-  objetRecette: {fileID: 0}
-  numeroRecette: 0
   ListeIngredients: []
 --- !u!23 &959033851
 MeshRenderer:
@@ -3948,7 +3944,7 @@ Transform:
   m_GameObject: {fileID: 1073628844}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03616, y: 0.01747, z: 0.0538}
+  m_LocalPosition: {x: -0.02609, y: 0.01747, z: -0.00651}
   m_LocalScale: {x: 0.0010800012, y: 0.0010085525, z: 0.0010800012}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7455,9 +7451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cccd90c5a83f8d4c8a623246074113a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contenantIndex: 0
-  ingredientsArrNouveau: []
-  listIngredients: []
+  ingredientsArr: []
 --- !u!1 &1559479226
 GameObject:
   m_ObjectHideFlags: 0
@@ -7961,7 +7955,7 @@ Transform:
   m_GameObject: {fileID: 1601828804}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0439, y: 0.01695, z: 0.05425}
+  m_LocalPosition: {x: -0.026789999, y: 0.01695, z: 0.0015799887}
   m_LocalScale: {x: 0.15019386, y: 0.007866436, z: 0.15019386}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9466,11 +9460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d8b941be09cf46a653a29b7b41a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recette01:
-  - 
   demandeNourriture: 0
-  objetRecette: {fileID: 0}
-  numeroRecette: 0
   ListeIngredients: []
 --- !u!23 &1844584468
 MeshRenderer:
@@ -10118,11 +10108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d8b941be09cf46a653a29b7b41a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recette01:
-  - 
   demandeNourriture: 0
-  objetRecette: {fileID: 0}
-  numeroRecette: 0
   ListeIngredients: []
 --- !u!23 &1893482545
 MeshRenderer:
@@ -16857,11 +16843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d8b941be09cf46a653a29b7b41a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recette01:
-  - 
   demandeNourriture: 0
-  objetRecette: {fileID: 0}
-  numeroRecette: 0
   ListeIngredients: []
 --- !u!4 &8732915871359369186
 Transform:
