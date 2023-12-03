@@ -5,8 +5,7 @@ using UnityEngine;
 public class client : MonoBehaviour
 {
 
-
-
+    public GameObject scriptJeu;
 
     // Verifie que le client n'a pas encore commande (elle est utiliser dans le script jeu.cs pour ne pas qu'un client commande plus qu'une recette)
     public bool demandeNourriture = false;
@@ -25,6 +24,7 @@ public class client : MonoBehaviour
         //Verifie si l'objet qui vient de rentrer en contact avec le client est une assiette et si le client voulait de la nourriture
         if (other.tag == "assiette" && demandeNourriture == true)
         {
+            
             //Debug.Log("assiette detecter et nourriture voulue"); GOOD
 
             //loop a travers le nombre d'ingredients que la liste d'ingredients possede
@@ -88,7 +88,7 @@ public class client : MonoBehaviour
     private float cooldown;
     private void Update()
     {
-        if(Time.realtimeSinceStartup - cooldown > 20f && demandeNourriture == false && cooldownOnOff == true)
+        if (Time.realtimeSinceStartup - cooldown > 20f && demandeNourriture == false && cooldownOnOff == true)
         {
             cooldownOnOff = false;
         }
@@ -102,6 +102,7 @@ public class client : MonoBehaviour
             // Active le cooldown sur le client pour ne pas qu'il reçoive toute suite une autre commande
             cooldownOnOff = true;
             cooldown = Mathf.Floor(Time.realtimeSinceStartup);
+            scriptJeu.GetComponent<jeu>().nombreDeVies = scriptJeu.GetComponent<jeu>().nombreDeVies - 1;
         }
 
     }

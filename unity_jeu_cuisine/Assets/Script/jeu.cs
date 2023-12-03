@@ -10,13 +10,21 @@ public class jeu : MonoBehaviour
     [Header("Object contenant le script qui contient les recettes")]
     public GameObject recueilRecette;
 
+    public int nombreDeVies = 5;
+
+    public bool etatPartie = false;
+
+
+    private void Start()
+    {
+        etatPartie = true;
+    }
+
     float startChrono;
     private void Update()
-
-       
     {
         // a chaque 10 seconde, la function se repete
-        if (Time.realtimeSinceStartup - startChrono > 10f /* <--- A modifier pour changer l'attente entre chaque commande*/)
+        if (etatPartie == true && Time.realtimeSinceStartup - startChrono > 10f /* <--- A modifier pour changer l'attente entre chaque commande*/)
         {
             startChrono = Mathf.Floor(Time.realtimeSinceStartup);
 
@@ -50,6 +58,18 @@ public class jeu : MonoBehaviour
 
 
         }
+        else if (nombreDeVies <= 0)
+        {
+            etatPartie = false;
+            for (int i = 0; i < zonesRepas.Length; i++)
+            {
+                /**A FAIRE***/
+            }
+
+            }
+
+
+        
 
     }
 
