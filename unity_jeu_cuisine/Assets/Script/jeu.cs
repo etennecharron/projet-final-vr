@@ -10,7 +10,7 @@ public class jeu : MonoBehaviour
     public List<GameObject> zonesRepasEnAttente;
     [Header("Object contenant le script qui contient les recettes")]
     public GameObject recueilRecette;
-
+    [Header("Stats de la partie")]
     public int nombreDeVies = 5;
 
     public bool etatPartie = false;
