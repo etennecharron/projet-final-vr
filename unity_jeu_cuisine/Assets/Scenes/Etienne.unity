@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2156.7878, g: 2259.5085, b: 3279.4993, a: 1}
+  m_IndirectSpecularColor: {r: 2157.4797, g: 2260.3584, b: 3280.458, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3766,6 +3766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d8b941be09cf46a653a29b7b41a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  table: {fileID: 959033847}
   scriptJeu: {fileID: 2068632967}
   demandeNourriture: 0
   ListeIngredients: []
@@ -9463,6 +9464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d8b941be09cf46a653a29b7b41a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  table: {fileID: 1844584464}
   scriptJeu: {fileID: 2068632967}
   demandeNourriture: 0
   ListeIngredients: []
@@ -10114,6 +10116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d8b941be09cf46a653a29b7b41a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  table: {fileID: 1893482541}
   scriptJeu: {fileID: 2068632967}
   demandeNourriture: 0
   ListeIngredients: []
@@ -10811,8 +10814,10 @@ MonoBehaviour:
   - {fileID: 1844584464}
   - {fileID: 959033847}
   - {fileID: 1893482541}
+  zonesRepasEnAttente: []
   recueilRecette: {fileID: 726924790}
   nombreDeVies: 5
+  etatPartie: 0
 --- !u!1 &2087394780
 GameObject:
   m_ObjectHideFlags: 0
@@ -16853,6 +16858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d8b941be09cf46a653a29b7b41a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  table: {fileID: 2112553260424679474}
   scriptJeu: {fileID: 2068632967}
   demandeNourriture: 0
   ListeIngredients: []

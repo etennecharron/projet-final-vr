@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class client : MonoBehaviour
 {
-
+    public GameObject table;
     public GameObject scriptJeu;
 
     // Verifie que le client n'a pas encore commande (elle est utiliser dans le script jeu.cs pour ne pas qu'un client commande plus qu'une recette)
@@ -71,7 +71,7 @@ public class client : MonoBehaviour
         }
     }
 
-
+    
 
 
     private void OnTriggerExit(Collider other)
@@ -91,9 +91,10 @@ public class client : MonoBehaviour
         if (Time.realtimeSinceStartup - cooldown > 20f && demandeNourriture == false && cooldownOnOff == true)
         {
             cooldownOnOff = false;
+            scriptJeu.GetComponent<jeu>().zonesRepasEnAttente.Add(table);
         }
 
-        if (Time.realtimeSinceStartup - tempsPourRecette > 20f && demandeNourriture == true)
+        if (Time.realtimeSinceStartup - tempsPourRecette > 60f && demandeNourriture == true)
         {
             Debug.Log("le client a trop atendus");
             tempsPourRecette = Mathf.Floor(Time.realtimeSinceStartup);
