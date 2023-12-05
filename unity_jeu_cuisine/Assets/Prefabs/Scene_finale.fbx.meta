@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: af86e0cc30ebbc74d9f24fab8f28f0f0
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: avocat2
+    second: {fileID: 2100000, guid: bc80229ac95f2d04fb569c5f94890235, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carotte
+    second: {fileID: 2100000, guid: 73656f10e13e85f4d96f7dd0b9fd03b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chaise1
+    second: {fileID: 2100000, guid: 8e653e29910bbb54ca1c4747361978a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cocombre
+    second: {fileID: 2100000, guid: 8f1c68a1af2f1a5439367ef354cae53a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crevette1
+    second: {fileID: 2100000, guid: bca283f6abfbf23448e45c988d79b0f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cuisine
+    second: {fileID: 2100000, guid: fda9845bdc9e0a049b2051db7f087416, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: edemame
+    second: {fileID: 2100000, guid: 4fa7c0404a76629459bd336197a3c2fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fondation
+    second: {fileID: 2100000, guid: 380970ba54dccde4fb85aa7355651547, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: poisson_core
+    second: {fileID: 2100000, guid: b7587575f833662458c5850921c7ca30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: poisson_queu
+    second: {fileID: 2100000, guid: 3b7729f10b2837a42b663bf433aad242, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rix
+    second: {fileID: 2100000, guid: 99bf9e8ba1a6af7499b6d413f28c41ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: salade
+    second: {fileID: 2100000, guid: 43c030c25a6ab184488283673d22e77b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tofu
+    second: {fileID: 2100000, guid: 01b92eb4deaed13499e33834fdc2738a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vitre1
+    second: {fileID: 2100000, guid: b622214a48cdbac4bbc527b843a85996, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: avocat_avant_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 997489726a4a8514e8a2bc8247598c8c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: carotte_avant_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 3154d50174b000a4ea77168c27185386, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chaise_avant_lambert1_BaseColor
+    second: {fileID: 2800000, guid: aae31a1a07debfb4fa73d75e19393fea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cocombre_avant_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 69265d482ce096045ba13cc0a003952c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cocombre_avant_lambert1_Normal
+    second: {fileID: 2800000, guid: 62b69b57b92a7ab45b36b9a954042bab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: crevette_avant_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 746a8935739f8344d91643d310881f2a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cuisine_fbx_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 924abfbf69fb5c946b9f38e2ab1a47cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: edamame_avant_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 4d790857c33a1bb4abee70c992e9db19, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fondation_avant_lambert1_BaseColor
+    second: {fileID: 2800000, guid: b2f8e48e96cc6dc44a58c13b0fc348d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fondation_avant_lambert1_Metallic
+    second: {fileID: 2800000, guid: ebf38aa3006244c4dbb765e4854bc904, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fondation_avant_lambert1_Normal
+    second: {fileID: 2800000, guid: 41b8e0fd98af3fc439a91076cb961723, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fondation_avant_lambert1_Roughness
+    second: {fileID: 2800000, guid: 7cb418a843a655a4fbce46c2ce143560, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poisson_avant_aiStandardSurface7_BaseColor
+    second: {fileID: 2800000, guid: f58c7b7f37804784cad71b8456231024, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poisson_avant_aiStandardSurface7_Metallic
+    second: {fileID: 2800000, guid: a33425ef075ef1548995f3302cc05f73, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poisson_avant_aiStandardSurface7_Normal
+    second: {fileID: 2800000, guid: 381c532cc2117fd4ab67f1c38244c9ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poisson_avant_aiStandardSurface7_Roughness
+    second: {fileID: 2800000, guid: b14573fcee7ff644494a5bbf4499f1b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poisson_avant_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 4ee19e622c8ee6741b91b74ae2ff1854, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poisson_avant_lambert1_Metallic
+    second: {fileID: 2800000, guid: 0d46698dce72b71458589fecb4ea02dd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poisson_avant_lambert1_Normal
+    second: {fileID: 2800000, guid: ed2c08553d3a8c940bc663578d1bd4f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poisson_avant_lambert1_Roughness
+    second: {fileID: 2800000, guid: 54512761e57989a419dffb2d6013a8ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: riz_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 83a6fae85490bef46b55daea9f086d60, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: salade_avant_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 71a36c7b738f81c4d9d6a9bbe11722be, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
