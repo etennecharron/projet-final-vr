@@ -28,7 +28,7 @@ public class jeu : MonoBehaviour
     float startChrono;
     private void Update()
     {
-        // a chaque 10 seconde, la function se repete
+        // a chaque 30 seconde, la function se repete
         if (etatPartie == true && Time.realtimeSinceStartup - startChrono > 30f /* <--- A modifier pour changer l'attente entre chaque commande*/)
         {
             startChrono = Time.realtimeSinceStartup;
@@ -38,7 +38,6 @@ public class jeu : MonoBehaviour
             //variable plus rapide pour la table random selectionner B)
             GameObject table = zonesRepasEnAttente[tableRandom];
             //Verifie que le client n'a pas deja commander
-            Debug.Log("etape 1");
             if(table.GetComponent<client>().demandeNourriture == false && table.GetComponent<client>().cooldownOnOff == false)
             {
                 // Annonce que le client a commander
@@ -56,7 +55,6 @@ public class jeu : MonoBehaviour
                     table.GetComponent<client>().ListeIngredients.Add(recueilRecette.GetComponent<receuil_recettes>().recettes[recetteRandom][i]);
                 }
 
-                Debug.Log("etape 2");
                 zonesRepasEnAttente.Remove(zonesRepasEnAttente.Find(table => table.gameObject == zonesRepasEnAttente[tableRandom].gameObject));
             }
             else
@@ -86,7 +84,4 @@ public class jeu : MonoBehaviour
 
 
 }
-
-//Idée cool pour une bonne selection des tables serait de math random un nombre qui matcherais entre 0 et le nombre de table prete a etre servive,
-//si la table est servie on la retire de la liste et quand elle est prete a etre resservie on la remmet dans la list
 

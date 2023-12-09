@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using TMPro;
 
 public class client : MonoBehaviour
 {
@@ -18,6 +20,9 @@ public class client : MonoBehaviour
 
     public bool cooldownOnOff;
 
+
+    public TextMeshProUGUI menuCuisineTexte;
+
     //Verifie que l'assiette qui contient les ingredients correspond a la recette demander par le client
     private void OnTriggerEnter(Collider other)
     {
@@ -34,7 +39,6 @@ public class client : MonoBehaviour
                     //loop e travers le nombre d'ingredients que l'assiette qui vient de rentrer en contact avec la zone possede
                     for (int o = 0; o <= other.GetComponent<assiette>().ingredientsArr.Count-1; o++)
                     {
-                    Debug.Log(other.GetComponent<assiette>().ingredientsArr.Count - 1);
                         //Verifie que chaque ingredient present dans l'assiette corespond a un ingredient de la recette 
                         if (ListeIngredients[i] == other.GetComponent<assiette>().ingredientsArr[o].name /*transcrit le nom des Gameobjects et non LE Gameobject btw*/) // ERREUR SI YA 2 FOIS LE MEME INGReDIENT DANS LA RECETTE, ON A JUSTE BESOINS DE L'INGReDIENTE 1 FOIS POUR QUE SA PASSE D:
                         {
@@ -76,18 +80,39 @@ public class client : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        // si l'assiete sors de la zone, les points pour les bons ingrédients sont retiré
+        //// si l'assiete sors de la zone, les points pour les bons ingrédients sont retiré
         if(other.tag == "assiette")
         {
             bonIngredient = 0;
         }
     }
 
+    
+ 
 
    public float tempsPourRecette;
     private float cooldown;
+    private string textePourAfficher;
+    private bool alterneMessage = false;
     private void Update()
     {
+
+
+        if(ListeIngredients.Count == 0 && alterneMessage == false)
+        {
+            menuCuisineTexte.text = "Rien encore";
+            alterneMessage = true;
+        }
+        if(ListeIngredients.Count > 0 && alterneMessage == true)
+        {
+            for( int i = 0; i<ListeIngredients.Count-1;i++ )
+            {
+                textePourAfficher = textePourAfficher + "<br>" + ListeIngredients[i];
+            }
+            menuCuisineTexte.text = textePourAfficher;
+            alterneMessage = false;
+        }
+
         if (Time.realtimeSinceStartup - cooldown > 20f && demandeNourriture == false && cooldownOnOff == true)
         {
             cooldownOnOff = false;
@@ -96,7 +121,7 @@ public class client : MonoBehaviour
 
         if (Time.realtimeSinceStartup - tempsPourRecette > 60f && demandeNourriture == true)
         {
-            Debug.Log("le client a trop atendus");
+            Debug.Log("la table " + table + " a trop attendus");
             tempsPourRecette = Mathf.Floor(Time.realtimeSinceStartup);
             demandeNourriture = false;
             ListeIngredients.Clear();
@@ -105,6 +130,10 @@ public class client : MonoBehaviour
             cooldown = Mathf.Floor(Time.realtimeSinceStartup);
             scriptJeu.GetComponent<jeu>().nombreDeVies = scriptJeu.GetComponent<jeu>().nombreDeVies - 1;
         }
+
+
+
+
 
     }
 
