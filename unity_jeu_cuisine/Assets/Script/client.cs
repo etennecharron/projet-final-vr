@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using TMPro;
+using WebSocketSharp;
 
 public class client : MonoBehaviour
 {
@@ -98,19 +98,29 @@ public class client : MonoBehaviour
     {
 
 
-        if(ListeIngredients.Count == 0 && alterneMessage == false)
+        if(demandeNourriture == false && alterneMessage == false)
         {
-            menuCuisineTexte.text = "Rien encore";
+            menuCuisineTexte.text = "Rien";
             alterneMessage = true;
         }
-        if(ListeIngredients.Count > 0 && alterneMessage == true)
+        if(demandeNourriture == true && alterneMessage == true)
         {
-            for( int i = 0; i<ListeIngredients.Count-1;i++ )
+            for( int i = 0; i<=ListeIngredients.Count-1;i++ )
             {
-                textePourAfficher = textePourAfficher + "<br>" + ListeIngredients[i];
+                if(textePourAfficher.IsNullOrEmpty() == true)
+                {
+                    textePourAfficher = ListeIngredients[i];
+                }
+                else
+                {
+                    textePourAfficher = textePourAfficher + "<br>" + ListeIngredients[i];
+
+                }
+             
             }
             menuCuisineTexte.text = textePourAfficher;
             alterneMessage = false;
+ 
         }
 
         if (Time.realtimeSinceStartup - cooldown > 20f && demandeNourriture == false && cooldownOnOff == true)

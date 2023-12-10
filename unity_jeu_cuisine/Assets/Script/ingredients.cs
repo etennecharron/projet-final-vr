@@ -10,7 +10,7 @@ public class ingredients : MonoBehaviour
 
     //L'endroit que l'objet doit être téléporter à
     [Header("Endroit où téléporter")]
-    public GameObject zoneIngredient;
+    public GameObject scriptSpawn;
 
     //Vérifie que l'objet est dans une assiette (La variable est utilisé pour le script Assiette qui détecte la présence de l'ingrédient dans l'assiette)
     [Header("Est ce l'ingrédient est dans une assiette")]
@@ -24,7 +24,8 @@ public class ingredients : MonoBehaviour
         if (other.tag == "ground")
         {
             // Si l'objet rencontré est le planché, l'objet désigné pour être téléporter sera téléporter à la zone désigné comme endroit où être téléporter
-            ingredient.transform.position = new Vector3(zoneIngredient.transform.position.x, zoneIngredient.transform.position.y, zoneIngredient.transform.position.z);
+            scriptSpawn.GetComponent<spawner>().enfants.Remove(ingredient);
+            Destroy(ingredient);
         }
 
         //Vérifie si l'ingrédient rentre en contact avec unne assiette 
@@ -47,8 +48,5 @@ public class ingredients : MonoBehaviour
         }
     }
 
-private void update(){
-
-}
 
 }

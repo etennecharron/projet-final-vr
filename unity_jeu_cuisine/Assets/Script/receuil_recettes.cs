@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class receuil_recettes : MonoBehaviour
 {
-    public string[][] recettes = new string[][] { new string[] { "salade", "avocat"}, new string[] { "avocat"}};
+    public string[][] recettes = new string[][] { new string[] { "salade", "avocat"}, new string[] { "avocat"}, new string[] {"avocat","salade","tofu","riz","crevette"}};
 
 }
