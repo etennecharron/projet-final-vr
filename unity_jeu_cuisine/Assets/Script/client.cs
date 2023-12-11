@@ -8,7 +8,7 @@ public class client : MonoBehaviour
 {
     public GameObject table;
     public GameObject scriptJeu;
-
+    public TextMeshProUGUI scoreMenu;
     // Verifie que le client n'a pas encore commande (elle est utiliser dans le script jeu.cs pour ne pas qu'un client commande plus qu'une recette)
     public bool demandeNourriture = false;
 
@@ -22,6 +22,7 @@ public class client : MonoBehaviour
 
 
     public TextMeshProUGUI menuCuisineTexte;
+    public TextMeshProUGUI menuVies;
 
     //Verifie que l'assiette qui contient les ingredients correspond a la recette demander par le client
     private void OnTriggerEnter(Collider other)
@@ -60,8 +61,10 @@ public class client : MonoBehaviour
                                 // Loop a travers les ingredients dans l'assiette lorsque la recette est bonne pour faire disparaitre les ingredients
                                 for (int u = 0; u < other.GetComponent<assiette>().ingredientsArr.Count; u++)
                                 {
-                                    // Fais disparaitre les ingredients
-                                    other.GetComponent<assiette>().ingredientsArr[u].gameObject.SetActive(false);
+                                // Fais disparaitre les ingredients
+                                Destroy(other.GetComponent<assiette>().ingredientsArr[u].gameObject);
+                                scriptJeu.GetComponent<jeu>().points = scriptJeu.GetComponent<jeu>().points + 1;
+                                scoreMenu.text = scriptJeu.GetComponent<jeu>().points.ToString();
                                 }
 
                             }
@@ -139,6 +142,7 @@ public class client : MonoBehaviour
             cooldownOnOff = true;
             cooldown = Mathf.Floor(Time.realtimeSinceStartup);
             scriptJeu.GetComponent<jeu>().nombreDeVies = scriptJeu.GetComponent<jeu>().nombreDeVies - 1;
+            menuVies.text = scriptJeu.GetComponent<jeu>().nombreDeVies.ToString();
         }
 
 

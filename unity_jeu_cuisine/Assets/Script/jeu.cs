@@ -12,6 +12,7 @@ public class jeu : MonoBehaviour
     public GameObject recueilRecette;
     [Header("Stats de la partie")]
     public int nombreDeVies = 5;
+    public int points = 0;
 
     public bool etatPartie = false;
 
