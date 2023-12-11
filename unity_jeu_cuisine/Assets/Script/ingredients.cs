@@ -16,6 +16,8 @@ public class ingredients : MonoBehaviour
     [Header("Est ce l'ingrédient est dans une assiette")]
     public bool ingredientPosition = false;
 
+    public bool ingredientSortis = false;
+
     //Vérifie si l'objet rentre en contact avec un objet
     private void OnTriggerEnter(Collider other)
     {

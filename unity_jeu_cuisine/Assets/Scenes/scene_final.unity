@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 5472.5073, g: 5466.1216, b: 7633.679, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9596,6 +9596,7 @@ MonoBehaviour:
   ingredient: {fileID: 4470188287018233495}
   scriptSpawn: {fileID: 377860789}
   ingredientPosition: 0
+  inredientSortis: 0
 --- !u!33 &392261227423207981
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19514,7 +19515,7 @@ Transform:
   m_GameObject: {fileID: 2449100257745340569}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.033048127, y: 0.016074913, z: 0.055537127}
+  m_LocalPosition: {x: 0.0075, y: 0.0168, z: 0.055537127}
   m_LocalScale: {x: 0.15019386, y: 0.007866436, z: 0.15019386}
   m_ConstrainProportionsScale: 0
   m_Children: []
