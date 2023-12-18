@@ -24,6 +24,9 @@ public class client : MonoBehaviour
     public TextMeshProUGUI menuCuisineTexte;
     public TextMeshProUGUI menuVies;
 
+    public AudioSource sonReussite;
+    public AudioSource sonEchec;
+
     //Verifie que l'assiette qui contient les ingredients correspond a la recette demander par le client
     private void OnTriggerEnter(Collider other)
     {
@@ -49,6 +52,7 @@ public class client : MonoBehaviour
                             // Verifie qu le nombre d'ingredients bon pour la recette correspond a la taille de la recette
                             if (bonIngredient == ListeIngredients.Count)
                             {
+                            sonReussite.Play();
                                 Debug.Log("recette terminer");
 
                             // Active le cooldown sur le client pour ne pas qu'il reçoive toute suite une autre commande
@@ -70,6 +74,7 @@ public class client : MonoBehaviour
                             }
                         else
                         {
+                            sonEchec.Play();
                             Debug.Log("mauvais recette");
                         }
                         }
