@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scene/Slicing_mechanic.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
-  - enabled: 1
-    path: Assets/Scene/William.unity
+  - enabled: 0
+    path: Assets/Scenes/William.unity
     guid: 83eece07530cca64ebcdc958ccfa12bc
+  - enabled: 1
+    path: Assets/Scenes/scene_final.unity
+    guid: 155f1293303a52a4c83c225ed913d016
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f051c4b301078854dbbd3e2a2db90a75,
       type: 2}
