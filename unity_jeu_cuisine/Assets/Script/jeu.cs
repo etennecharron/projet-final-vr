@@ -88,6 +88,7 @@ public class jeu : MonoBehaviour
         //Verifie que le client n'a pas deja commander
         if (table.GetComponent<client>().demandeNourriture == false && table.GetComponent<client>().cooldownOnOff == false)
         {
+            table.GetComponent<client>().clientPersonnage.SetActive(true);
             // Annonce que le client a commander
             table.GetComponent<client>().demandeNourriture = true;
 
