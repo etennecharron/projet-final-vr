@@ -9,6 +9,9 @@ public class client : MonoBehaviour
     public GameObject table;
     public GameObject scriptJeu;
     public TextMeshProUGUI scoreMenu;
+
+    public GameObject clientPersonnage;
+
     // Verifie que le client n'a pas encore commande (elle est utiliser dans le script jeu.cs pour ne pas qu'un client commande plus qu'une recette)
     public bool demandeNourriture = false;
 
@@ -16,7 +19,7 @@ public class client : MonoBehaviour
     public List<string> ListeIngredients;
 
     //Verifie le nombre d'objet dans l'assiette que la recette avait besoins
-    private int bonIngredient = 0;
+    public int bonIngredient = 0;
 
     public bool cooldownOnOff;
 
@@ -140,6 +143,7 @@ public class client : MonoBehaviour
         if (Time.realtimeSinceStartup - tempsPourRecette > 60f && demandeNourriture == true)
         {
             Debug.Log("la table " + table + " a trop attendus");
+            clientPersonnage.SetActive(false);
             tempsPourRecette = Mathf.Floor(Time.realtimeSinceStartup);
             demandeNourriture = false;
             ListeIngredients.Clear();
