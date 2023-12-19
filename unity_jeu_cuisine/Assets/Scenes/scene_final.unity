@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5478.809, g: 5474.0317, b: 7649.126, a: 1}
+  m_IndirectSpecularColor: {r: 5472.505, g: 5466.11, b: 7633.6777, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11282,7 +11282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1046272134
 Transform:
   m_ObjectHideFlags: 0
@@ -29132,7 +29132,8 @@ MonoBehaviour:
   texturePoissonBrule: {fileID: 2100000, guid: ef9981a8089cadf4ab57069007feab6b, type: 2}
   textureTofuCuit: {fileID: 2100000, guid: ef153933785b3794c9cbc5da825ffa8d, type: 2}
   textureTofuBrule: {fileID: 2100000, guid: 890274081ee83274190890b259ceae43, type: 2}
-  rondFour: {fileID: 0}
+  rondFour: {fileID: 4673093342560157264}
+  fumer: {fileID: 1046272133}
 --- !u!65 &2094545110
 BoxCollider:
   m_ObjectHideFlags: 0

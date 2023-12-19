@@ -21,10 +21,23 @@ public class GestionCuisson : MonoBehaviour
     private float tempsBrulure = 10f;
 
     public GameObject rondFour;
+    public GameObject fumer;
+    private bool fourActiver = false;
 
     void Update()
     {    
-        if (enCuisson == true && rondFour.transform.rotation.x < 0.7247043)
+       if( rondFour.transform.rotation.x < 0.7247043)
+        {
+            fumer.SetActive(true);
+            fourActiver = true;
+
+        }
+        else { 
+            fourActiver = false;
+            fumer.SetActive(false);
+        };
+
+        if (enCuisson == true && fourActiver == true)
         {
             Debug.Log("en train de cuire");
             tempsCuisson += Time.deltaTime;
@@ -60,7 +73,7 @@ public class GestionCuisson : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(rondFour.transform.rotation.x < 0.7247043) {
+        if(fourActiver == true) {
             if (other.gameObject.name == "poisson")
             {
                 Debug.Log("poisson");
