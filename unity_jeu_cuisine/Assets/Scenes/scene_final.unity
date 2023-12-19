@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5476.9067, g: 5472.9067, b: 7648.0635, a: 1}
+  m_IndirectSpecularColor: {r: 5472.5015, g: 5466.11, b: 7633.6777, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18762,10 +18762,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f06c774900de2d458708def51084c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poisson: {fileID: 0}
+  poisson: {fileID: 1941655100}
   texturePoissonCuit: {fileID: 0}
   texturePoissonBrule: {fileID: 0}
-  tofu: {fileID: 1386224926}
+  tofu: {fileID: 1467957748}
   textureTofuCuit: {fileID: 0}
   textureTofuBrule: {fileID: 0}
 --- !u!65 &2094545110

@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class GestionCuisson : MonoBehaviour
 {
-    public GameObject poisson;
+    public string ingredientNom01 = "poisson";
+    public string ingredientNom02 = "tofus";
+
+    private GameObject poisson;
+    private GameObject tofus;
+
     public Material texturePoissonCuit;
     public Material texturePoissonBrule;
-    public GameObject tofu;
     public Material textureTofuCuit;
     public Material textureTofuBrule;
+
     private bool enCuisson;
     private float tempsCuisson;
     private float tempsBrulure = 10f;
@@ -37,23 +42,26 @@ public class GestionCuisson : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == poisson)
+        if (other.gameObject.name == "poisson")
         {
+            poisson = other.gameObject;
             enCuisson = true;
-        }else if (other.gameObject == tofu)
+        }else if (other.gameObject.name == "tofu")
         {
+            tofus = other.gameObject;
             enCuisson = true;
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == poisson)
+        if (other.gameObject.name == "poisson")
         {
             enCuisson = false;
             tempsCuisson = 0f;
             // Réinitialiser le temps de cuisson lorsque le poisson quitte la zone de cuisson
-        }else if(other.gameObject == tofu){
+        }else if(other.gameObject.name == "tofu")
+        {
             enCuisson = false;
             tempsCuisson = 0f;
             // Réinitialiser le temps de cuisson lorsque le poisson quitte la zone de cuisson

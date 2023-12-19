@@ -18,6 +18,7 @@ public class spawner : MonoBehaviour
     //private bool objetSortit;
     public bool contientDejaIngredient;
     private int contientObjetNb = 0;
+
     private void OnTriggerExit(Collider other)
     {
         if(other.name == nomADonner && enfants.Count < 10 && other.GetComponent<ingredients>().ingredientSortis == false)
