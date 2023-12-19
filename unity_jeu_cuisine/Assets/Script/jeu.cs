@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class jeu : MonoBehaviour
 {
-   
+
     [Header("Zone ou recevoir le repas")]
     public GameObject[] zonesRepas;
     public List<GameObject> zonesRepasEnAttente;
@@ -16,15 +16,6 @@ public class jeu : MonoBehaviour
 
     public bool etatPartie = false;
 
-    // LE CONTENUS DE LA FONCTION START EST SUJET A CHANGEMENT CAR IL NOUS FAUDRAIS UN BOUTON QUI ACTIVE LA PARTIE
-    private void Start()
-    {
-        etatPartie = true;
-        for(int i = 0; i < zonesRepas.Length; i++)
-        {
-            zonesRepasEnAttente.Add(zonesRepas[i]);
-        } 
-    }
 
     float startChrono;
     private void Update()
@@ -39,7 +30,7 @@ public class jeu : MonoBehaviour
             //variable plus rapide pour la table random selectionner B)
             GameObject table = zonesRepasEnAttente[tableRandom];
             //Verifie que le client n'a pas deja commander
-            if(table.GetComponent<client>().demandeNourriture == false && table.GetComponent<client>().cooldownOnOff == false)
+            if (table.GetComponent<client>().demandeNourriture == false && table.GetComponent<client>().cooldownOnOff == false)
             {
                 // Annonce que le client a commander
                 table.GetComponent<client>().demandeNourriture = true;
@@ -75,12 +66,37 @@ public class jeu : MonoBehaviour
                 zonesRepas[i].GetComponent<client>().ListeIngredients.Clear();
             }
 
-            }
+        }
 
 
-        
+
 
     }
+
+
+
+
+
+
+
+
+
+
+    public void commencerPartie ()
+    {
+
+        etatPartie = true;
+        for (int i = 0; i < zonesRepas.Length; i++)
+        {
+            zonesRepasEnAttente.Add(zonesRepas[i]);
+        }
+
+    }   
+
+
+
+
+
 
 
 

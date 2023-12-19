@@ -108,7 +108,7 @@ public class client : MonoBehaviour
 
         if(demandeNourriture == false && alterneMessage == false)
         {
-            menuCuisineTexte.text = "Rien";
+            menuCuisineTexte.text = "";
             alterneMessage = true;
         }
         if(demandeNourriture == true && alterneMessage == true)
