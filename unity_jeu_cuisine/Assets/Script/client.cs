@@ -11,6 +11,7 @@ public class client : MonoBehaviour
     public TextMeshProUGUI scoreMenu;
 
     public GameObject clientPersonnage;
+    public Animation test;
 
     // Verifie que le client n'a pas encore commande (elle est utiliser dans le script jeu.cs pour ne pas qu'un client commande plus qu'une recette)
     public bool demandeNourriture = false;
@@ -33,6 +34,7 @@ public class client : MonoBehaviour
     //Verifie que l'assiette qui contient les ingredients correspond a la recette demander par le client
     private void OnTriggerEnter(Collider other)
     {
+        test.Play();
         //Verifie si l'objet qui vient de rentrer en contact avec le client est une assiette et si le client voulait de la nourriture
         if (other.tag == "assiette" && demandeNourriture == true)
         {
