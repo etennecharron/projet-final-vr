@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5472.5015, g: 5466.11, b: 7633.6777, a: 1}
+  m_IndirectSpecularColor: {r: 5472.532, g: 5466.127, b: 7633.6777, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23160,7 +23160,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3872fbc459d1e1549b0c665218d131bd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.529
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -32347,6 +32347,7 @@ GameObject:
   - component: {fileID: 2823207656884292223}
   - component: {fileID: 4376583260758825968}
   - component: {fileID: 7436564786869162650}
+  - component: {fileID: 7436564786869162651}
   m_Layer: 0
   m_Name: pCube14
   m_TagString: Untagged
@@ -34530,7 +34531,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6254939035704251932}
   - {fileID: 1242935279258068418}
   - {fileID: 920534326}
   - {fileID: 1903367157}
@@ -38782,13 +38782,14 @@ GameObject:
   - component: {fileID: 8247342500877963706}
   - component: {fileID: 8247342500877963705}
   - component: {fileID: 8247342500877963707}
+  - component: {fileID: 8247342500877963708}
   m_Layer: 0
   m_Name: bas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6035205981428181206
 Transform:
   m_ObjectHideFlags: 0
@@ -39259,14 +39260,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6006840153718285700}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2388631, y: -0, z: -0, w: 0.97105324}
-  m_LocalPosition: {x: 0.0018712162, y: 0.010501913, z: 0.0041026305}
-  m_LocalScale: {x: 1.6624546, y: 0.053466775, z: 0.026487615}
+  m_LocalRotation: {x: 0.0055824122, y: -0, z: -0, w: 0.99998444}
+  m_LocalPosition: {x: 0.02123407, y: 0.01063, z: 0.10594}
+  m_LocalScale: {x: 1.6624546, y: 0.05346677, z: 0.026487617}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 863092887}
-  m_Father: {fileID: 3536240510027694020}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 8577047037156154443}
+  m_LocalEulerAnglesHint: {x: 0.64, y: 0, z: 0}
 --- !u!23 &6261822754415710507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42314,6 +42315,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7436564786869162651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202077853554060093}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.066, y: 0.17574099, z: 0.01}
+  m_Center: {x: 0.0040000034, y: -0.059, z: 0.00000037671998}
 --- !u!23 &7441739334229735562
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44646,7 +44668,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -44663,7 +44685,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.77339447, y: 0.17513067, z: 2.1589987}
+  m_ConnectedAnchor: {x: 0.77339447, y: 0.17798626, z: 2.1618366}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -44676,11 +44698,11 @@ HingeJoint:
     force: 0
     freeSpin: 0
   m_UseLimits: 1
-  m_ExtendedLimits: 0
+  m_ExtendedLimits: 1
   m_UseAcceleration: 0
   m_Limits:
-    min: -178.21744
-    max: -90.04973
+    min: 180.72523
+    max: 287.19748
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -44690,6 +44712,27 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!65 &8247342500877963708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6006840153718285700}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01135099, y: 0.1883122, z: 0.027471323}
+  m_Center: {x: -0.00008064555, y: 0.089155644, z: -0.008728765}
 --- !u!1 &8255238014098782475
 GameObject:
   m_ObjectHideFlags: 0
@@ -46886,6 +46929,7 @@ Transform:
   - {fileID: 8435815435594760011}
   - {fileID: 8327180424568419721}
   - {fileID: 3019445514779058751}
+  - {fileID: 6254939035704251932}
   - {fileID: 3536240510027694020}
   - {fileID: 2474655394628955809}
   - {fileID: 4399146051297860770}
