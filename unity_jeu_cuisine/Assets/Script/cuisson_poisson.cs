@@ -9,7 +9,7 @@ public class GestionCuisson : MonoBehaviour
     public string ingredientNom02 = "tofus";
 
     private GameObject poisson;
-    private GameObject tofus;
+    private GameObject tofu;
 
     public Material texturePoissonCuit;
     public Material texturePoissonBrule;
@@ -29,15 +29,28 @@ public class GestionCuisson : MonoBehaviour
             if (tempsCuisson >= tempsBrulure)
             {
                 Debug.Log("cuisson parfaite");
-                ChangerTexturePoisson(texturePoissonBrule);
-                ChangerTextureTofu(texturePoissonBrule);
+                if (poisson != null)
+                {
+                    ChangerTexturePoisson(texturePoissonCuit);
+                }
+                if (tofu != null)
+                {
+                    ChangerTextureTofu(textureTofuCuit);
+                }
                 // Faire d'autres actions si nécessaire pour le poisson brûlé
             }
-            else if (tempsCuisson >= 5f)
+            else if (tempsCuisson >= 10f)
             {
                 Debug.Log("bruler D:");
-                ChangerTexturePoisson(texturePoissonCuit);
-                ChangerTextureTofu(texturePoissonBrule);
+                if(poisson != null)
+                {
+                    ChangerTexturePoisson(texturePoissonBrule);
+                }
+                if(tofu != null)
+                {
+                    ChangerTextureTofu(textureTofuBrule);
+                }
+                
                 // Faire d'autres actions si nécessaire pour le poisson cuit
             }
         }
@@ -52,7 +65,8 @@ public class GestionCuisson : MonoBehaviour
             enCuisson = true;
         }else if (other.gameObject.name == "tofu")
         {
-            tofus = other.gameObject;
+            Debug.Log("tofu");
+            tofu = other.gameObject;
             enCuisson = true;
         }
     }
@@ -80,7 +94,7 @@ public class GestionCuisson : MonoBehaviour
 
     void ChangerTextureTofu(Material nouvelleTexture)
     {
-        Renderer rend = poisson.GetComponent<Renderer>();
+        Renderer rend = tofu.GetComponent<Renderer>();
         rend.material = nouvelleTexture;
     }
 }

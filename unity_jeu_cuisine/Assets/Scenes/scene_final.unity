@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5472.5015, g: 5466.11, b: 7633.6777, a: 1}
+  m_IndirectSpecularColor: {r: 5472.5015, g: 5466.099, b: 7633.679, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22904,7 +22904,7 @@ Transform:
   m_GameObject: {fileID: 3913454029131115315}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0.7071068, z: -0, w: 0}
-  m_LocalPosition: {x: -0.0005109068, y: 0.00191, z: 0.044342924}
+  m_LocalPosition: {x: 0.0378, y: -0.00936, z: 0.044342924}
   m_LocalScale: {x: 0.064551935, y: 0.27991444, z: 0.114644766}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34617,7 +34617,7 @@ Transform:
   m_GameObject: {fileID: 4250708987056926265}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00008, y: -0.00025885925, z: -0.00086659566}
+  m_LocalPosition: {x: -0.00201, y: -0.00049, z: -0.00086659566}
   m_LocalScale: {x: 0.06973699, y: 0.05583097, z: 0.06973699}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34642,7 +34642,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.01, y: 0.010000001, z: 0.01}
+  m_Size: {x: 0.012, y: 0.012, z: 0.012}
   m_Center: {x: 0.000000029802322, y: 0.000000029802322, z: 0}
 --- !u!114 &8511333536077823670
 MonoBehaviour:
