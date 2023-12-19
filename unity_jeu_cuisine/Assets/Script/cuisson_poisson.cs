@@ -25,8 +25,9 @@ public class GestionCuisson : MonoBehaviour
     private bool fourActiver = false;
 
     void Update()
-    {    
-       if( rondFour.transform.rotation.x < 0.7247043)
+    {
+
+       if( rondFour.transform.rotation.z > 0)
         {
             fumer.SetActive(true);
             fourActiver = true;
