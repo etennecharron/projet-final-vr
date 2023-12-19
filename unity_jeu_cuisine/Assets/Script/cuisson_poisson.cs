@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,18 +22,20 @@ public class GestionCuisson : MonoBehaviour
 
     void Update()
     {
-        if (enCuisson)
+        if (enCuisson == true)
         {
+            Debug.Log("en train de cuire");
             tempsCuisson += Time.deltaTime;
-
             if (tempsCuisson >= tempsBrulure)
             {
+                Debug.Log("cuisson parfaite");
                 ChangerTexturePoisson(texturePoissonBrule);
                 ChangerTextureTofu(texturePoissonBrule);
                 // Faire d'autres actions si nécessaire pour le poisson brûlé
             }
             else if (tempsCuisson >= 5f)
             {
+                Debug.Log("bruler D:");
                 ChangerTexturePoisson(texturePoissonCuit);
                 ChangerTextureTofu(texturePoissonBrule);
                 // Faire d'autres actions si nécessaire pour le poisson cuit
@@ -44,6 +47,7 @@ public class GestionCuisson : MonoBehaviour
     {
         if (other.gameObject.name == "poisson")
         {
+            Debug.Log("poisson");
             poisson = other.gameObject;
             enCuisson = true;
         }else if (other.gameObject.name == "tofu")

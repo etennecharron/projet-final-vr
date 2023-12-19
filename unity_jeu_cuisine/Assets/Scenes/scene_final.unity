@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5472.5015, g: 5466.11, b: 7633.6777, a: 1}
+  m_IndirectSpecularColor: {r: 5472.5015, g: 5466.127, b: 7633.6777, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18762,10 +18762,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f06c774900de2d458708def51084c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poisson: {fileID: 1941655100}
+  ingredientNom01: poisson
+  ingredientNom02: tofus
   texturePoissonCuit: {fileID: 0}
   texturePoissonBrule: {fileID: 0}
-  tofu: {fileID: 1467957748}
   textureTofuCuit: {fileID: 0}
   textureTofuBrule: {fileID: 0}
 --- !u!65 &2094545110
@@ -18783,7 +18783,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19768,7 +19768,7 @@ Transform:
   m_GameObject: {fileID: 2057334912393656128}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0367, y: -0.00869, z: 0.0437}
+  m_LocalPosition: {x: -0.00167, y: 0.00173, z: 0.0437}
   m_LocalScale: {x: 0.9055417, y: 0.90554184, z: 0.90554184}
   m_ConstrainProportionsScale: 0
   m_Children:
