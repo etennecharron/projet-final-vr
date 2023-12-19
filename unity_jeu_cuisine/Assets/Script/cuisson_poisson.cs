@@ -20,9 +20,11 @@ public class GestionCuisson : MonoBehaviour
     private float tempsCuisson;
     private float tempsBrulure = 10f;
 
+    public GameObject rondFour;
+
     void Update()
-    {
-        if (enCuisson == true)
+    {    
+        if (enCuisson == true && rondFour.transform.rotation.x < 0.7247043)
         {
             Debug.Log("en train de cuire");
             tempsCuisson += Time.deltaTime;
@@ -58,17 +60,21 @@ public class GestionCuisson : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "poisson")
-        {
-            Debug.Log("poisson");
-            poisson = other.gameObject;
-            enCuisson = true;
-        }else if (other.gameObject.name == "tofu")
-        {
-            Debug.Log("tofu");
-            tofu = other.gameObject;
-            enCuisson = true;
+        if(rondFour.transform.rotation.x < 0.7247043) {
+            if (other.gameObject.name == "poisson")
+            {
+                Debug.Log("poisson");
+                poisson = other.gameObject;
+                enCuisson = true;
+            }
+            else if (other.gameObject.name == "tofu")
+            {
+                Debug.Log("tofu");
+                tofu = other.gameObject;
+                enCuisson = true;
+            }
         }
+        
     }
 
     void OnTriggerExit(Collider other)
@@ -90,11 +96,13 @@ public class GestionCuisson : MonoBehaviour
     {
         Renderer rend = poisson.GetComponent<Renderer>();
         rend.material = nouvelleTexture;
+        poisson.name = "poisson cuit";
     }
 
     void ChangerTextureTofu(Material nouvelleTexture)
     {
         Renderer rend = tofu.GetComponent<Renderer>();
         rend.material = nouvelleTexture;
+        tofu.name = "tofu cuit";
     }
 }

@@ -129,7 +129,9 @@ public class jeu : MonoBehaviour
     }
 
 
-
+    public void quitterJeu() {
+        Application.Quit();
+    }
 
 
 
